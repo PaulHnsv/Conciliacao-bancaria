@@ -54,8 +54,8 @@ def test_celulas_debito_tem_fonte_vermelha(tmp_path):
     wb = openpyxl.load_workbook(output)
     ws = wb["Extrato"]
     # Linha 3 = segundo lancamento (debito)
-    cor = ws.cell(3, 3).font.color.rgb
-    assert cor.endswith("FF0000")  # ARGB: os ultimos 6 digitos sao o RGB
+    cor = ws.cell(3, 4).font.color.rgb  # col 4 = Debitos (col 3 agora eh Categoria)
+    assert cor.endswith("0000")  # termina com 0000 = vermelho (FF0000 ou C00000)
 
 
 def test_resumo_tem_total_creditos(tmp_path):

@@ -1,0 +1,18 @@
+# ================================================================
+# LIMITES DE GASTOS POR CATEGORIA
+# ================================================================
+# Define o percentual maximo de cada categoria em relacao
+# ao total de receitas do mes.
+# O sistema destaca em AMARELO quando o gasto ultrapassa o limite.
+#
+# Formato:  Nome da Categoria = percentual (sem o simbolo %)
+# Exemplo:  PIX Enviado = 30  significa: alerta se > 30% da renda
+# ================================================================
+
+PIX Enviado = 30
+Cartao de Credito = 25
+Debito Automatico = 20
+Boleto = 15
+Transferencia = 20
+Saque/IOF = 5
+Outros Debitos = 10
